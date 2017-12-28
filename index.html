@@ -277,27 +277,50 @@
 <hr>
 <h1 id="安装hexo脚手架"><a href="#安装hexo脚手架" class="headerlink" title="安装hexo脚手架"></a>安装hexo脚手架</h1><ol>
 <li>win+r输入cmd回车</li>
-<li><p>输入如下命令回车</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<li>输入如下命令回车<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <ul>
 <li>npm:依赖包管理器</li>
 <li>install:安装、导入、可以简写为i</li>
-<li>-g:代表全局安装<h1 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h1>1.在指定位置使用如下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-</li>
+<li>-g:代表全局安装<h1 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h1></li>
 </ul>
+<ol>
+<li><p>在指定位置使用如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入博客目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加依赖包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>2.进入博客目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure></p>
-<p>3.添加依赖包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i</span><br></pre></td></tr></table></figure></p>
 <h1 id="本地预览博客"><a href="#本地预览博客" class="headerlink" title="本地预览博客"></a>本地预览博客</h1><h2 id="启动hexo服务"><a href="#启动hexo服务" class="headerlink" title="启动hexo服务"></a>启动hexo服务</h2><p>在blog路径下使用如下命令启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
 <p>然后在浏览器地址栏输入<a href="http://localhost:4000回车访问个人博客" target="_blank" rel="noopener">http://localhost:4000回车访问个人博客</a></p>
 <h2 id="编译博客"><a href="#编译博客" class="headerlink" title="编译博客"></a>编译博客</h2><p>每一次修改博客后，先ctrl+s保存，然后使用如下命令编译：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
-<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>当修改了博客内容，编译后浏览器页面没有发生变化时，需要清理博客缓存，方式如下：<br>1.在blog目录执行hexo clean后重新编译<br>2.在浏览器博客页面使用ctrl+shift+i调出控制台，切换到network,选中disable cache,然后ctrl+r(刷新)</p>
-<h1 id="编写博客"><a href="#编写博客" class="headerlink" title="编写博客"></a>编写博客</h1><p>1.创建博客文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></figure></p>
-<p>然后在source/-post目录打开相应的md编辑即可<br>2.创建页面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面标题</span><br></pre></td></tr></table></figure></p>
+<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>当修改了博客内容，编译后浏览器页面没有发生变化时，需要清理博客缓存，方式如下：</p>
+<ol>
+<li>在blog目录执行hexo clean后重新编译</li>
+<li>在浏览器博客页面使用ctrl+shift+i调出控制台，切换到network,选中disable cache,然后ctrl+r(刷新)</li>
+</ol>
+<h1 id="编写博客"><a href="#编写博客" class="headerlink" title="编写博客"></a>编写博客</h1><ol>
+<li>创建博客文章<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>然后在source/-post目录打开相应的md编辑即可</p>
+<ol>
+<li>创建页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面标题</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <p>然后在source目录下找到对应的文件夹，打开里面的index.md编写即可</p>
-<h1 id="替换主题"><a href="#替换主题" class="headerlink" title="替换主题"></a>替换主题</h1><p>1.在<a href="https://hexo.io/themes/" target="_blank" rel="noopener"></a>官网找到自己喜欢的主题，根据提示git到本地themes目录。<br>2.然后修改博客项目根路径的-config.yml配置文件，将theme改为新主题文件夹名称。<br>3.停止hexo服务再启动（ctrl+c）<br>4.执行hexo g编译，然后去浏览器预览</p>
-<h1 id="托管到github"><a href="#托管到github" class="headerlink" title="托管到github"></a>托管到github</h1><p>1.注册github账号（自行百度）<br>2.验证ssh key</p>
+<h1 id="替换主题"><a href="#替换主题" class="headerlink" title="替换主题"></a>替换主题</h1><ol>
+<li>在<a href="https://hexo.io/themes/" target="_blank" rel="noopener"></a>官网找到自己喜欢的主题，根据提示git到本地themes目录。</li>
+<li>然后修改博客项目根路径的-config.yml配置文件，将theme改为新主题文件夹名称。</li>
+<li>停止hexo服务再启动（ctrl+c）</li>
+<li>执行hexo g编译，然后去浏览器预览<h1 id="托管到github"><a href="#托管到github" class="headerlink" title="托管到github"></a>托管到github</h1></li>
+<li>注册github账号（自行百度）</li>
+<li><p>验证ssh key</p>
 <ul>
 <li>在桌面右键git bash here</li>
 <li>使用ssh-keygen -t rsa -c “注册git的邮箱”命令，然后一路回车，直到出现泡沫图案。</li>
@@ -308,25 +331,30 @@
 <li>单击右侧add ssh key按钮</li>
 <li>title：随便填，key:ctrl+v,然后点击add ssh key按钮</li>
 </ul>
-<p>3.验证github用户名和邮箱</p>
+</li>
+<li><p>验证github用户名和邮箱</p>
 <ul>
 <li>在桌面右键git bash here,依次执行以下命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github用户名“</span><br><span class="line">git config --global user.email &quot;github邮箱“</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>4.在github创建用户名同名仓库</p>
+</li>
+<li><p>在github创建用户名同名仓库</p>
 <ul>
 <li>点击github头像左侧+按钮，选择第一项</li>
-<li>仓库名:github用户名.github.io<br> ps:注意区分大小写，必须保持一致<br>5.配置-config.yml<br>打开blog项目根目录的-config.yml, 找到最下面的deploy选项，按照如下格式填写：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type:git</span><br><span class="line">repository:http://github.com/用户名/用户名.github.io</span><br><span class="line">branch:master</span><br></pre></td></tr></table></figure>
-</li>
+<li>仓库名:github用户名.github.io<br>ps:注意区分大小写，必须保持一致</li>
 </ul>
+</li>
+<li>配置-config.yml<br>打开blog项目根目录的-config.yml, 找到最下面的deploy选项，按照如下格式填写：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type:git</span><br><span class="line">repository:http://github.com/用户名/用户名.github.io</span><br><span class="line">branch:master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <p>ps:注意缩进和符号以及属性前面的空格</p>
 <ol>
 <li><p>在blog根目录执行hexo d命令将本地博客代码推送到github服务器<br>ps:不需要每更改一次就推送，先在本地测试准确无误后再推送</p>
 <h1 id="个人域名绑定"><a href="#个人域名绑定" class="headerlink" title="个人域名绑定"></a>个人域名绑定</h1><p>1.域名申请（自行百度）<br>2.域名解析，添加如下记录值</p>
 <p>记录类型|主机记录|解析线路|记录值<br>-|-|-|-<br>CNAME|www|默认|用户名.github.io<br>A|@|默认|192.30.252.153<br>A|@|默认|192.30.252.154</p>
-<p>3.在博客主目录下找到public文件夹，在里面新建名为CNAME的文件（不带后缀）<br>4.在CNAME文件里面填写个人域名，如baidu.com。ps:不带http、www等修饰。<br>5.执行hexo d命令推送</p>
 </li>
 </ol>
+<p>3.在博客主目录下找到public文件夹，在里面新建名为CNAME的文件（不带后缀）<br>4.在CNAME文件里面填写个人域名，如baidu.com。ps:不带http、www等修饰。<br>5.执行hexo d命令推送</p>
 
       
       
